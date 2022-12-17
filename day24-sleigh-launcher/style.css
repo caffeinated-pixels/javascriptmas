@@ -1,0 +1,135 @@
+:root {
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --gold: #fac57d;
+  --snow: #f0f4f7;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: var(--dark-green);
+  background-color: var(--snow);
+  overflow: hidden;
+}
+
+h1 {
+  padding: 0 0.1em;
+}
+
+.launchpad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  flex-direction: column;
+  min-width: 100px;
+  min-height: 100px;
+  background: var(--gold);
+  padding: 1em 2em;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.crew {
+  font-size: 30px;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  padding: 1em 2em;
+  border: none;
+  font-size: 1.2rem;
+  background-color: var(--dark-green);
+  color: var(--snow);
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.countdown {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.animate1 {
+  animation: moveleft 5s forwards;
+}
+
+@keyframes moveleft {
+  100% {
+    transform: translate(-150%, 0);
+  }
+}
+
+.animate2 {
+  animation: vibrate 750ms linear infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(-150%, 0);
+  }
+  20% {
+    transform: translate(-152%, 2%);
+  }
+  40% {
+    transform: translate(-152%, -2%);
+  }
+  60% {
+    transform: translate(-148%, 2%);
+  }
+  80% {
+    transform: translate(-152%, -2%);
+  }
+  100% {
+    transform: translate(-150%, 0);
+  }
+}
+
+.animate3 {
+  animation: grandexit 2s linear forwards;
+}
+
+@keyframes grandexit {
+  0% {
+    transform: translate(-150%, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(25%, 25%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(1000%, -1000%);
+    opacity: 0;
+  }
+}
+
+/* 
+Task: 
+- Write the CSS required to launch Santa and his sleigh. Check out this cool animation generator: https://animista.net/play/exits/ */

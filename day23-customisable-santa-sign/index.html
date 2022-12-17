@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customisable Santa Sign</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p id="sign" class="sign">
+        <span id="left-emoji">🎅</span>
+        <span id="message" class="message">Santa Stop Here!</span>
+        <span id="right-emoji">☃️</span>
+      </p>
+    </div>
+
+    <label for="text-input">Message to Santa:</label>
+    <input
+      type="text"
+      id="text-input"
+      class="text-input"
+      name="text"
+      maxlength="25"
+    />
+
+    <div class="selectors">
+      <select id="left-emoji-select">
+        <option value="🎅">🎅</option>
+        <option value="🤶">🤶</option>
+        <option value="🦌">🦌</option>
+        <option value="🛷">🛷</option>
+      </select>
+      <select id="right-emoji-select">
+        <option value="☃️">☃️</option>
+        <option value="🎁">🎁</option>
+        <option value="🎄">🎄</option>
+        <option value="❄">❄</option>
+      </select>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

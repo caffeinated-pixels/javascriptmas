@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snowman customiser</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="snowman">
+      <div class="head">
+        <div class="eyes">
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+        </div>
+        <div id="nose" class="nose"></div>
+        <div class="mouth"></div>
+      </div>
+      <div class="snowman-body">
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <div>
+        <input id="eye-color" type="color" name="eye-color" value="#99bbff" />
+        <label for="eye-color">Eye Color</label>
+      </div>
+      <div>
+        <input
+          id="pupil-color"
+          type="color"
+          name="pupil-color"
+          value="#000000"
+        />
+        <label for="pupil-color">Pupil Color</label>
+      </div>
+      <div>
+        <input id="nose-color" type="color" name="nose-color" value="#ffa500" />
+        <label for="nose-color">Nose Color</label>
+      </div>
+      <div>
+        <input
+          id="button-color"
+          type="color"
+          name="button-color"
+          value="#000"
+        />
+        <label for="button-color">Button Color</label>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

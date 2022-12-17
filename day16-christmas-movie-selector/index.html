@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Movie Selector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🎄 Christmas Movie Selector 📺</h1>
+    <div class="movie-display">
+      <p id="suggested-movie" class="suggested-movie">...</p>
+    </div>
+    <form>
+      <select id="age-selector">
+        <option value="" disabled selected>age suitability</option>
+        <option value="grown ups">grown ups</option>
+        <option value="everyone">everyone</option>
+      </select>
+      <select id="genre-selector">
+        <option value="" disabled selected>genre</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="War">War</option>
+        <option value="Drama">Drama</option>
+        <option value="Family">Family</option>
+        <option value="Romance">Romance</option>
+      </select>
+      <button id="random-choice" type="button">Random movie</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>

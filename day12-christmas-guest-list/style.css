@@ -1,0 +1,106 @@
+:root {
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --gold: #fac57d;
+  --snow: #f0f4f7;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  color: var(--dark-green);
+  background-color: var(--gold);
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+form *:not(label),
+.guest-list {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 10em;
+  justify-content: space-around;
+}
+
+form * {
+  padding: 0.5em;
+  font-size: 1.3rem;
+}
+
+label {
+  padding: 0;
+}
+
+input {
+  background: var(--snow);
+}
+.guest-list {
+  color: var(--wine-red);
+  min-width: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--snow);
+  padding: 1em 1.25em;
+  height: 250px;
+}
+
+li {
+  display: flex;
+  padding: 0.25em 0;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+li > p {
+  margin: 0;
+}
+
+.delete-btn {
+  margin-left: auto;
+  border: 0;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: var(--bright-red);
+  font-weight: bold;
+}
+
+button {
+  background: var(--dark-green);
+  color: var(--snow);
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.05);
+  cursor: pointer;
+}
